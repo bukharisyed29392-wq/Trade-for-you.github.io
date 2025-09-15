@@ -38,11 +38,6 @@ body {
     display: flex;
     align-items: center;
 }
-.sidebar a.active {
-    color: #007bff;
-    border-left: 3px solid #007bff;
-    padding-left: 10px;
-}
 .sidebar a i {
     margin-right: 10px;
 }
@@ -53,54 +48,25 @@ body {
     color: white;
     border: none;
     cursor: pointer;
-    width: 100%;
-    border-radius: 5px;
 }
 main {
-    margin-left: 270px;
+    margin-left: 250px;
     padding: 20px;
 }
 header {
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px 0;
     background: linear-gradient(135deg, #007bff, #00bfff);
     color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 h1 {
     font-size: 42px;
-    margin: 10px 0;
-}
-h2 {
-    font-size: 28px;
-    color: #007bff;
-    margin: 30px 0 15px;
-}
-p {
-    font-size: 18px;
-    margin: 15px 0;
-}
-ul, ol {
-    font-size: 18px;
-    margin: 15px 0 20px 30px;
 }
 img {
-    display: block;
     max-width: 100%;
-    height: auto;
-    margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: 500;
-}
-a:hover {
-    text-decoration: underline;
-    color: #0056b3;
 }
 .fade-in {
     animation: fadeIn 1s ease-in;
@@ -133,7 +99,7 @@ body.dark-mode {
     background-color: #121212;
     color: #e0e0e0;
 }
-body.dark-mode .sidebar, body.dark-mode header, body.dark-mode footer, body.dark-mode section {
+body.dark-mode .sidebar, body.dark-mode header, body.dark-mode footer {
     background-color: #1e1e1e;
 }
 body.dark-mode a {
@@ -144,19 +110,8 @@ body.dark-mode a {
         width: 100%;
         height: auto;
         position: relative;
-        box-shadow: none;
     }
     main {
         margin-left: 0;
-    }
-    h1 {
-        font-size: 32px;
-    }
-    h2 {
-        font-size: 24px;
-    }
-    section {
-        margin: 20px 10px;
-        padding: 15px;
     }
 }

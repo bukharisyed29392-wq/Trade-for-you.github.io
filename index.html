@@ -1,71 +1,75 @@
-<!doctype html>
-<div class="hero-overlay"></div>
-<div class="container hero-inner">
-<h1>Master Forex Trading — From Basics to Strategy</h1>
-<p class="lead">Step-by-step lessons, real charts, risk management & community tips — all in one place.</p>
-<div class="hero-ctas">
-<a class="btn" href="basics.html">Get Started</a>
-<a class="btn btn-outline" href="strategies.html">See Strategies</a>
-</div>
-</div>
-</section>
-
-
-<!-- FEATURES -->
-<section class="section features">
-<div class="container">
-<h2 class="section-title">What you'll learn</h2>
-<div class="grid cols-3">
-<article class="card">
-<img src="images/chart.jpg" alt="Forex chart example">
-<h3>Forex Basics</h3>
-<p>Understand pips, lots, leverage, and how trades work — explained in easy steps.</p>
-</article>
-<article class="card">
-<img src="images/strategy.jpg" alt="Trading strategy">
-<h3>Proven Strategies</h3>
-<p>Trend following, scalping, swing & risk management with examples and charts.</p>
-</article>
-<article class="card">
-<img src="images/community.jpg" alt="Community trading">
-<h3>Community & Signals</h3>
-<p>Connect with other learners, share ideas, and discuss live setups (community-driven).</p>
-</article>
-</div>
-</div>
-</section>
-
-
-<!-- FOOTER -->
-<footer class="site-footer">
-<div class="container footer-grid">
-<div>
-<a class="logo" href="index.html">Forex<span>Academy</span></a>
-<p class="muted">© 2025 Forex Academy. All rights reserved.</p>
-</div>
-<div>
-<h4>Quick Links</h4>
-<ul class="footer-links">
-<li><a href="basics.html">Basics</a></li>
-<li><a href="strategies.html">Strategies</a></li>
-<li><a href="contacts.html">Contact</a></li>
-</ul>
-</div>
-<div>
-<h4>Contact</h4>
-<p class="muted">Email: <a href="mailto:you@example.com">you@example.com</a></p>
-</div>
-</div>
-</footer>
-
-
-<script>
-// Mobile nav toggle
-const toggle = document.querySelector('.nav-toggle');
-const nav = document.querySelector('.nav');
-toggle.addEventListener('click', () => {
-nav.classList.toggle('open');
-});
-</script>
-</body>
-</html>
+<!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name="description" content="Beginner's guide to forex trading with strategies, brokers, and tips.">
+         <title>Premium Forex Trading Guide</title>
+         <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+         <link rel="icon" href="favicon.ico" type="image/x-icon">
+         <!-- Google Analytics (replace G-XXXXXXX with your ID from analytics.google.com) -->
+         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+         <script>
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+           gtag('config', 'G-XXXXXXX');
+         </script>
+     </head>
+     <body>
+         <div class="loader"></div>
+         <div class="container">
+             <aside class="sidebar">
+                 <div class="sidebar-logo">
+                     <i class="fas fa-chart-line"></i> Forex Elite
+                 </div>
+                 <nav>
+                     <ul>
+                         <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                         <li><a href="basics.html"><i class="fas fa-book-open"></i> Forex Basics</a></li>
+                         <li><a href="strategies.html"><i class="fas fa-chart-bar"></i> Strategies</a></li>
+                         <li><a href="brokers.html"><i class="fas fa-handshake"></i> Brokers</a></li>
+                         <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                     </ul>
+                 </nav>
+                 <button id="dark-mode-toggle"><i class="fas fa-moon"></i> Dark Mode</button>
+             </aside>
+             <main>
+                 <header>
+                     <h1>Welcome to Forex Elite</h1>
+                     <p>Master forex trading with premium guides and tools for beginners.</p>
+                     <img src="https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Premium Forex Chart">
+                 </header>
+                 <section class="fade-in">
+                     <h2>Why Choose Forex?</h2>
+                     <p>Forex is the world’s largest financial market, offering 24/5 trading and high liquidity. Learn to trade currencies like a pro!</p>
+                     <img src="https://images.unsplash.com/photo-1614029951518-3d6d1cfa2a7c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Trading Screen">
+                 </section>
+             </main>
+         </div>
+         <footer>
+             <p>&copy; 2025 Syed Bukhari | <a href="https://x.com/yourusername"><i class="fab fa-twitter"></i></a> <a href="https://youtube.com/yourchannel"><i class="fab fa-youtube"></i></a></p>
+         </footer>
+         <script>
+             // Dark Mode Toggle
+             const toggle = document.getElementById('dark-mode-toggle');
+             toggle.addEventListener('click', () => {
+                 document.body.classList.toggle('dark-mode');
+                 toggle.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="fas fa-sun"></i> Light Mode' : '<i class="fas fa-moon"></i> Dark Mode';
+             });
+             // Loading Animation
+             window.addEventListener('load', () => {
+                 document.querySelector('.loader').style.display = 'none';
+             });
+             // Smooth Scrolling
+             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                 anchor.addEventListener('click', function (e) {
+                     e.preventDefault();
+                     document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                 });
+             });
+         </script>
+     </body>
+     </html>

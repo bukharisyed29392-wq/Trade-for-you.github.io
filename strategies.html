@@ -1,87 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn forex trading strategies for beginners, including scalping, trend following, and RSI.">
-    <title>Forex Trading Strategies</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://via.placeholder.com/32?text=FX" type="image/png">
-    <!-- Google Analytics (replace UA-XXXXX-X with your ID from analytics.google.com) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-X"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-XXXXX-X');
-    </script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Strategies — Forex Academy</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="loader"></div>
-    <div class="container">
-        <aside class="sidebar">
-            <div class="sidebar-logo">
-                <i class="fas fa-chart-line"></i> Forex Pro
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="basics.html"><i class="fas fa-book-open"></i> Forex Basics</a></li>
-                    <li><a href="strategies.html" class="active"><i class="fas fa-chart-bar"></i> Strategies</a></li>
-                    <li><a href="brokers.html"><i class="fas fa-handshake"></i> Brokers</a></li>
-                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-                </ul>
-            </nav>
-            <button id="dark-mode-toggle"><i class="fas fa-moon"></i> Dark Mode</button>
-        </aside>
-        <main>
-            <header>
-                <h1>Forex Trading Strategies for Beginners</h1>
-                <p>Discover simple strategies to trade forex like a pro.</p>
-                <img src="https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Forex Trading Chart">
-            </header>
-            <section class="fade-in">
-                <h2>1. Scalping</h2>
-                <p>Scalping involves making quick, small trades (minutes or seconds) to profit from tiny price movements. Use 1-minute or 5-minute charts and focus on liquid pairs like EUR/USD.</p>
-                <p><strong>Tip</strong>: Use low spreads (e.g., with Exness) and set tight stop-losses.</p>
-                <img src="https://images.unsplash.com/photo-1581595220553-1fc0638ca90a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Scalping Chart">
-            </section>
-            <section class="fade-in">
-                <h2>2. Trend Following</h2>
-                <p>Trade in the direction of the market trend (up or down) using moving averages (e.g., 50-day or 200-day). Buy when prices rise, sell when they fall.</p>
-                <p><strong>Tip</strong>: Confirm trends with tools like XM’s MetaTrader 4 platform.</p>
-            </section>
-            <section class="fade-in">
-                <h2>3. RSI Strategy</h2>
-                <p>The Relative Strength Index (RSI) measures if a currency is overbought (above 70) or oversold (below 30). Buy when oversold, sell when overbought.</p>
-                <p><strong>Tip</strong>: Combine RSI with support/resistance levels for better trades.</p>
-                <a href="https://www.investopedia.com/terms/r/rsi.asp" target="_blank">Learn More About RSI</a>
-            </section>
-        </main>
-    </div>
-    <footer>
-        <p>&copy; 2025 Syed Bukhari | <a href="https://x.com/yourusername"><i class="fab fa-twitter"></i></a> <a href="https://youtube.com/yourchannel"><i class="fab fa-youtube"></i></a></p>
-    </footer>
-    <script>
-        // Dark Mode Toggle
-        const toggle = document.getElementById('dark-mode-toggle');
-        toggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            toggle.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="fas fa-sun"></i> Light Mode' : '<i class="fas fa-moon"></i> Dark Mode';
-        });
-        // Loading Animation
-        window.addEventListener('load', () => {
-            document.querySelector('.loader').style.display = 'none';
-        });
-        // Smooth Scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    </script>
+<header class="site-header">
+<div class="container nav-row">
+<a class="logo" href="index.html">Forex<span>Academy</span></a>
+<button class="nav-toggle" aria-label="toggle navigation">☰</button>
+<nav class="nav">
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="basics.html">Basics</a></li>
+<li><a href="strategies.html" class="active">Strategies</a></li>
+<li><a href="contacts.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main class="container section">
+<h1>Trading Strategies</h1>
+<p class="lead">Short practical strategies with example setups and risk rules.</p>
+
+
+<div class="grid cols-2">
+<article class="strategy-card">
+<h3>1. Trend Following</h3>
+<p>Look for higher highs and higher lows in uptrends. Trade pullbacks to the moving average with a stop under the recent swing low.</p>
+<p><strong>Risk:</strong> 1-2% per trade. Use proper position sizing.</p>
+</article>
+
+
+<article class="strategy-card">
+<h3>2. Scalping</h3>
+<p>Short timeframes (1–15min). Tight stops and quick exits. Requires low spreads and fast execution.</p>
+</article>
+
+
+<article class="strategy-card">
+<h3>3. Swing Trading</h3>
+<p>Hold trades for days to weeks. Focus on daily charts and key support/resistance zones.</p>
+</article>
+
+
+<article class="strategy-card">
+<h3>Risk Management</h3>
+<p>Define stop-loss, calculate position size before entering, diversify trades, and keep a trading journal.</p>
+</article>
+</div>
+</main>
+
+
+<footer class="site-footer small">
+<div class="container">© 2025 Forex Academy</div>
+</footer>
+
+
+<script>
+const toggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav');
+toggle.addEventListener('click', () => nav.classList.toggle('open'));
+</script>
 </body>
 </html>

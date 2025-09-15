@@ -1,68 +1,81 @@
-<!doctype html>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-<!-- NAV (same as index) -->
-<header class="site-header">
-<div class="container nav-row">
-<a class="logo" href="index.html">Forex<span>Academy</span></a>
-<button class="nav-toggle" aria-label="toggle navigation">☰</button>
-<nav class="nav">
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="basics.html" class="active">Basics</a></li>
-<li><a href="strategies.html">Strategies</a></li>
-<li><a href="contacts.html">Contact</a></li>
-</ul>
-</nav>
-</div>
-</header>
-
-
-<main class="container section">
-<h1>Forex Basics</h1>
-<p class="lead">Start here if you are new. Short clear explanations with examples.</p>
-
-
-<section class="content-grid">
-<article class="text-card">
-<h2>What is Forex?</h2>
-<p>Forex (foreign exchange) is the global market for trading currencies. Traders buy and sell currency pairs like EUR/USD to profit from price changes.</p>
-</article>
-
-
-<article class="text-card">
-<h2>Pips & Lots</h2>
-<p><strong>Pip:</strong> smallest price move in a currency pair. <strong>Lot:</strong> standard trade size (1 lot = 100,000 units). Example calculations are shown here for clarity.</p>
-</article>
-
-
-<article class="text-card">
-<h2>Leverage & Margin</h2>
-<p>Leverage lets you control a larger position with small capital. It increases both profits and losses. Learn to use it responsibly and always use stop-loss.</p>
-</article>
-
-
-<article class="text-card">
-<h2>Order Types</h2>
-<p>Market order, limit order, stop order — know the difference and when to use each to manage entries and exits.</p>
-</article>
-</section>
-
-
-<p class="muted">Want examples or practice exercises here? Replace these paragraphs with your own lessons or ask me to expand any topic.</p>
-</main>
-
-
-<footer class="site-footer small">
-<div class="container">© 2025 Forex Academy</div>
-</footer>
-
-
-<script>
-const toggle = document.querySelector('.nav-toggle');
-const nav = document.querySelector('.nav');
-toggle.addEventListener('click', () => nav.classList.toggle('open'));
-</script>
-</body>
-</html>
+<!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name="description" content="Learn forex trading basics like currency pairs, pips, and leverage for beginners.">
+         <title>Forex Trading Basics</title>
+         <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+         <link rel="icon" href="favicon.ico" type="image/x-icon">
+         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+         <script>
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+           gtag('config', 'G-XXXXXXX');
+         </script>
+     </head>
+     <body>
+         <div class="loader"></div>
+         <div class="container">
+             <aside class="sidebar">
+                 <div class="sidebar-logo">
+                     <i class="fas fa-chart-line"></i> Forex Elite
+                 </div>
+                 <nav>
+                     <ul>
+                         <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                         <li><a href="basics.html" class="active"><i class="fas fa-book-open"></i> Forex Basics</a></li>
+                         <li><a href="strategies.html"><i class="fas fa-chart-bar"></i> Strategies</a></li>
+                         <li><a href="brokers.html"><i class="fas fa-handshake"></i> Brokers</a></li>
+                         <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                     </ul>
+                 </nav>
+                 <button id="dark-mode-toggle"><i class="fas fa-moon"></i> Dark Mode</button>
+             </aside>
+             <main>
+                 <header>
+                     <h1>Forex Trading Basics</h1>
+                     <p>Understand the fundamentals of forex trading to start your journey.</p>
+                     <img src="https://images.unsplash.com/photo-1591832096147-8c8543e8fced?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Currency Pairs Chart">
+                 </header>
+                 <section class="fade-in">
+                     <h2>Currency Pairs</h2>
+                     <p>Trade one currency against another (e.g., EUR/USD = Euro vs. US Dollar). Major pairs like USD/JPY are most liquid.</p>
+                 </section>
+                 <section class="fade-in">
+                     <h2>Pips</h2>
+                     <p>A pip is the smallest price move in forex (e.g., 0.0001 in EUR/USD). It measures your profit or loss.</p>
+                     <img src="https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Pip Chart">
+                 </section>
+                 <section class="fade-in">
+                     <h2>Leverage</h2>
+                     <p>Leverage lets you trade larger amounts with less money (e.g., 1:100). It increases both profits and risks.</p>
+                     <p><strong>Tip</strong>: Start with low leverage (1:10) on brokers like Exness or XM.</p>
+                     <a href="https://www.investopedia.com/articles/forex/09/forex-basic-terminology-jargon.asp" target="_blank">Learn More on Investopedia</a>
+                 </section>
+             </main>
+         </div>
+         <footer>
+             <p>&copy; 2025 Syed Bukhari | <a href="https://x.com/yourusername"><i class="fab fa-twitter"></i></a> <a href="https://youtube.com/yourchannel"><i class="fab fa-youtube"></i></a></p>
+         </footer>
+         <script>
+             const toggle = document.getElementById('dark-mode-toggle');
+             toggle.addEventListener('click', () => {
+                 document.body.classList.toggle('dark-mode');
+                 toggle.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="fas fa-sun"></i> Light Mode' : '<i class="fas fa-moon"></i> Dark Mode';
+             });
+             window.addEventListener('load', () => {
+                 document.querySelector('.loader').style.display = 'none';
+             });
+             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                 anchor.addEventListener('click', function (e) {
+                     e.preventDefault();
+                     document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                 });
+             });
+         </script>
+     </body>
+     </html>

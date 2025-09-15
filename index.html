@@ -3,49 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beginner's Guide to Stock Trading</title>
+    <meta name="description" content="Beginner's guide to forex trading with strategies, brokers, and tips.">
+    <title>Premium Forex Trading Guide</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://via.placeholder.com/32?text=FX" type="image/png"> <!-- Replace with your favicon URL -->
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-X"></script> <!-- Replace UA-XXXXX-X with your tracking ID -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXX-X'); // Sign up at analytics.google.com for ID
+    </script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Trading Basics for Beginners</h1>
-        <p>Learn the fundamentals of stock trading and start your investing journey.</p>
-    </header>
-
-    <section id="introduction">
-        <h2>What is Stock Trading?</h2>
-        <p>Stock trading involves buying and selling shares of companies on the stock market. Stocks represent ownership in a company, and their value can rise or fall based on the company's performance and market conditions.</p>
-        <img src="https://via.placeholder.com/600x300?text=Stock+Market+Chart" alt="Stock Market Chart">
-    </section>
-
-    <section id="basics">
-        <h2>Basic Concepts</h2>
-        <ul>
-            <li><strong>Stocks</strong>: Shares of ownership in a company. Buying stocks means you own a piece of that company.</li>
-            <li><strong>Stock Market</strong>: A marketplace (like NYSE or NASDAQ) where stocks are traded.</li>
-            <li><strong>Investing vs. Trading</strong>: Investing is long-term (holding stocks for years), while trading is short-term (buying/selling frequently to profit from price changes).</li>
-            <li><strong>Risk</strong>: Stocks can lose value, so diversification (spreading investments) is key.</li>
-        </ul>
-    </section>
-
-    <section id="get-started">
-        <h2>How to Get Started</h2>
-        <ol>
-            <li>Open a brokerage account (e.g., with apps like Robinhood or Fidelity).</li>
-            <li>Research stocks: Look at company performance, financials, and news.</li>
-            <li>Start small: Invest what you can afford to lose, even $25 a week.</li>
-            <li>Learn tools: Use charts, apps, and free resources like Investopedia.</li>
-        </ol>
-    </section>
-
-    <section id="tips">
-        <h2>Tips for Beginners</h2>
-        <p>Start with education, avoid emotional decisions, and practice with paper trading (simulated trades). Remember, past performance doesn't guarantee future results.</p>
-        <a href="https://www.investopedia.com/articles/basics/06/invest1000.asp" target="_blank">Read More on Investopedia</a>
-    </section>
-
+    <div class="loader"></div> <!-- Loading animation -->
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i class="fas fa-chart-line"></i> Forex Pro
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="basics.html"><i class="fas fa-book-open"></i> Forex Basics</a></li>
+                    <li><a href="strategies.html"><i class="fas fa-chart-bar"></i> Strategies</a></li>
+                    <li><a href="brokers.html"><i class="fas fa-handshake"></i> Brokers</a></li>
+                    <li><a href="#tips"><i class="fas fa-lightbulb"></i> Tips</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <button id="dark-mode-toggle"><i class="fas fa-moon"></i> Dark Mode</button>
+        </aside>
+        <main>
+            <header>
+                <h1>Welcome to Premium Forex Trading for Beginners</h1>
+                <p>Master forex with high-quality guides, charts, and tools.</p>
+                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236ad?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb" alt="Premium Forex Chart">
+            </header>
+            <section class="fade-in">
+                <h2>Why Forex?</h2>
+                <p>Forex is the world's largest market, with 24/5 access and high liquidity. Start learning today!</p>
+                <img src="https://images.pexels.com/photos/6802049/pexels-photo-6802049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Currency Exchange">
+            </section>
+            <!-- Add more sections as needed -->
+        </main>
+    </div>
     <footer>
-        <p>Created for learning purposes. Not financial advice. &copy; 2025 Your Name</p>
+        <p>&copy; 2025 Syed Bukhari | <a href="https://x.com/yourusername"><i class="fab fa-twitter"></i></a> <a href="https://youtube.com/yourchannel"><i class="fab fa-youtube"></i></a></p>
     </footer>
+    <script>
+        // Dark Mode Toggle
+        const toggle = document.getElementById('dark-mode-toggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            toggle.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="fas fa-sun"></i> Light Mode' : '<i class="fas fa-moon"></i> Dark Mode';
+        });
+        // Loading Animation
+        window.addEventListener('load', () => {
+            document.querySelector('.loader').style.display = 'none';
+        });
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
 </body>
 </html>

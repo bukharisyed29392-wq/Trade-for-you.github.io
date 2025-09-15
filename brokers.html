@@ -1,88 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Choose reliable forex brokers like Exness and XM for safe trading in Pakistan.">
-    <title>Best Forex Brokers for Beginners</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://via.placeholder.com/32?text=FX" type="image/png">
-    <!-- Google Analytics (replace UA-XXXXX-X with your ID) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-X"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-XXXXX-X');
-    </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brokers — Trade For You</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="loader"></div>
-    <div class="container">
-        <aside class="sidebar">
-            <div class="sidebar-logo">
-                <i class="fas fa-chart-line"></i> Forex Pro
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="basics.html"><i class="fas fa-book-open"></i> Forex Basics</a></li>
-                    <li><a href="strategies.html"><i class="fas fa-chart-bar"></i> Strategies</a></li>
-                    <li><a href="brokers.html" class="active"><i class="fas fa-handshake"></i> Brokers</a></li>
-                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-                </ul>
-            </nav>
-            <button id="dark-mode-toggle"><i class="fas fa-moon"></i> Dark Mode</button>
-        </aside>
-        <main>
-            <header>
-                <h1>Best Forex Brokers for Beginners</h1>
-                <p>Find trusted brokers to start your forex trading journey safely.</p>
-                <img src="https://images.pexels.com/photos/6802049/pexels-photo-6802049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Forex Broker Platform">
-            </header>
-            <section class="fade-in">
-                <h2>1. Exness</h2>
-                <p>Exness is regulated, offers low spreads, and supports MetaTrader 4/5. It’s ideal for Pakistan traders with micro accounts starting at $10.</p>
-                <p><strong>Why Choose?</strong> Fast withdrawals, high leverage (up to 1:2000), and a demo account.</p>
-                <a href="https://www.exness.com" target="_blank">Visit Exness</a>
-            </section>
-            <section class="fade-in">
-                <h2>2. XM</h2>
-                <p>XM is beginner-friendly with free educational webinars and MetaTrader platforms. Offers micro lots and bonuses for new traders.</p>
-                <p><strong>Why Choose?</strong> Regulated by CySEC, low minimum deposit ($5), and 24/5 support.</p>
-                <a href="https://www.xm.com" target="_blank">Visit XM</a>
-                <img src="https://images.unsplash.com/photo-1614029951518-3d6d1cfa2a7c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Trading App">
-            </section>
-            <section class="fade-in">
-                <h2>Beware of Unregulated Brokers</h2>
-                <p>Avoid brokers like Quotex, which are banned in Pakistan due to lack of regulation. Stick to regulated brokers for safety.</p>
-                <a href="https://www.babypips.com/learn/forex/choosing-a-broker" target="_blank">Learn More on BabyPips</a>
-            </section>
-        </main>
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="logo" href="index.html">Trade<span>ForYou</span></a>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="basics.html">Basics</a></li>
+          <li><a href="strategies.html">Strategies</a></li>
+          <li><a href="brokers.html" class="active">Brokers</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <footer>
-        <p>&copy; 2025 Syed Bukhari | <a href="https://x.com/yourusername"><i class="fab fa-twitter"></i></a> <a href="https://youtube.com/yourchannel"><i class="fab fa-youtube"></i></a></p>
-    </footer>
-    <script>
-        // Dark Mode Toggle
-        const toggle = document.getElementById('dark-mode-toggle');
-        toggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            toggle.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="fas fa-sun"></i> Light Mode' : '<i class="fas fa-moon"></i> Dark Mode';
-        });
-        // Loading Animation
-        window.addEventListener('load', () => {
-            document.querySelector('.loader').style.display = 'none';
-        });
-        // Smooth Scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    </script>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <h1>Forex Brokers</h1>
+      <p class="lead">Learn how to choose the best broker for safe and reliable trading.</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="container section">
+    <h2 class="section-title">Things to Look for in a Broker</h2>
+
+    <div class="grid cols-2">
+      <div class="text-card">
+        <h3>Regulation & Security</h3>
+        <p>Always check if the broker is regulated by trusted authorities (FCA, ASIC, CySEC, etc.). Regulation ensures your funds are safe.</p>
+
+        <h3>Trading Costs</h3>
+        <p>Compare spreads, commissions, and hidden charges. A small difference can save you big money over time.</p>
+
+        <h3>Execution Speed</h3>
+        <p>Fast execution means less slippage and better entry/exit for trades.</p>
+
+        <h3>Account Types</h3>
+        <p>Choose between micro, standard, or ECN accounts depending on your trading style.</p>
+
+        <h3>Platform & Tools</h3>
+        <p>Ensure the broker supports MT4/MT5 or any other platform you are comfortable with.</p>
+      </div>
+
+      <aside class="card">
+        <img src="images/brokers.jpg" alt="Broker illustration" style="width:100%; border-radius:8px; margin-bottom:12px;">
+        <h3>Quick Checklist</h3>
+        <ul>
+          <li>Is the broker regulated?</li>
+          <li>What are the spreads & fees?</li>
+          <li>Does it have a demo account?</li>
+          <li>How fast are deposits & withdrawals?</li>
+        </ul>
+      </aside>
+    </div>
+
+    <section style="margin-top:30px;">
+      <h3>Tips Before Choosing</h3>
+      <ol>
+        <li>Test the broker with a demo account first.</li>
+        <li>Check reviews but trust regulation more than opinions.</li>
+        <li>Start small before going big with deposits.</li>
+        <li>Focus on transparency and customer support.</li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer small">
+    <div class="container">© 2025 Trade For You</div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (toggle) toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
 </body>
 </html>

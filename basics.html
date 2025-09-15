@@ -1,30 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Same head as index.html (copy-paste meta, links, scripts) -->
+<!doctype html>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <!-- Same sidebar as index.html -->
-        </aside>
-        <main>
-            <header>
-                <h1>Forex Basics</h1>
-            </header>
-            <section class="fade-in">
-                <h2>Currency Pairs</h2>
-                <p>Trade pairs like EUR/USD.</p>
-                <img src="https://images.unsplash.com/photo-1591832096147-8c8543e8fced?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb" alt="Currency Pairs Chart">
-            </section>
-            <!-- Add pips, leverage, etc., as in previous content -->
-        </main>
-    </div>
-    <footer>
-        <!-- Same footer -->
-    </footer>
-    <script>
-        // Same JS as index.html
-    </script>
+<!-- NAV (same as index) -->
+<header class="site-header">
+<div class="container nav-row">
+<a class="logo" href="index.html">Forex<span>Academy</span></a>
+<button class="nav-toggle" aria-label="toggle navigation">☰</button>
+<nav class="nav">
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="basics.html" class="active">Basics</a></li>
+<li><a href="strategies.html">Strategies</a></li>
+<li><a href="contacts.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main class="container section">
+<h1>Forex Basics</h1>
+<p class="lead">Start here if you are new. Short clear explanations with examples.</p>
+
+
+<section class="content-grid">
+<article class="text-card">
+<h2>What is Forex?</h2>
+<p>Forex (foreign exchange) is the global market for trading currencies. Traders buy and sell currency pairs like EUR/USD to profit from price changes.</p>
+</article>
+
+
+<article class="text-card">
+<h2>Pips & Lots</h2>
+<p><strong>Pip:</strong> smallest price move in a currency pair. <strong>Lot:</strong> standard trade size (1 lot = 100,000 units). Example calculations are shown here for clarity.</p>
+</article>
+
+
+<article class="text-card">
+<h2>Leverage & Margin</h2>
+<p>Leverage lets you control a larger position with small capital. It increases both profits and losses. Learn to use it responsibly and always use stop-loss.</p>
+</article>
+
+
+<article class="text-card">
+<h2>Order Types</h2>
+<p>Market order, limit order, stop order — know the difference and when to use each to manage entries and exits.</p>
+</article>
+</section>
+
+
+<p class="muted">Want examples or practice exercises here? Replace these paragraphs with your own lessons or ask me to expand any topic.</p>
+</main>
+
+
+<footer class="site-footer small">
+<div class="container">© 2025 Forex Academy</div>
+</footer>
+
+
+<script>
+const toggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav');
+toggle.addEventListener('click', () => nav.classList.toggle('open'));
+</script>
 </body>
 </html>
